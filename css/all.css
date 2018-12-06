@@ -71,7 +71,7 @@ img {
   height: 420px;
   position: relative; }
 
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   .header {
     background-image: url(../images/header_mobile.png);
     background-position: center; } }
