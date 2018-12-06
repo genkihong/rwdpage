@@ -139,6 +139,8 @@ img {
     .topmenu li {
       float: none;
       border-bottom: 1px dashed #FFFFFF; }
+    .topmenu a{
+      padding: 1em; }
   .showmenu {
     display: block;
     float: right;
