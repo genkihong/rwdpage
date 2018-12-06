@@ -789,7 +789,7 @@ img {
     transition: all .3s;
     background: #FF8800; }
 
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   .reg-form .clause {
     display: none; } }
 
