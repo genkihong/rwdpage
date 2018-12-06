@@ -87,16 +87,19 @@
 		max-height: 0px;  //隱藏desktop選單
 		overflow: hidden;
 		transition: max-height 1.5s; 
-    	position: absolute;
-    	z-index: 100;
-    	top: 55px;
-    	left: 0;
-    	right: 0;
-    	background: rgba(0,0,0,0.75);
-    	li{
-    		float: none;
-    		border-bottom: 1px dashed #FFFFFF;
-    	}
+		position: absolute;
+		z-index: 100;
+		top: 55px;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,0.75);
+    		li{
+			float: none;
+			border-bottom: 1px dashed #FFFFFF;
+    		}
+		a{
+			padding: 1em;
+		}
  	}
 //顯示手機漢堡選單	
 	.showmenu{				
