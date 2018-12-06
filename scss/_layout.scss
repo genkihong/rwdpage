@@ -17,8 +17,8 @@
 	height: 420px;
 	position: relative;
 }
-//iphone5背景圖
-@include iphone5{	//max-width: 320px
+//iphone6背景圖
+@include iphone414{	//max-width: 414px
 	.header{
 		// height: auto;
 		background-image: url(../images/header_mobile.png);
