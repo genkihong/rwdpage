@@ -1,0 +1,12 @@
+@import "mixins"; 
+@import "variables";
+@import "reset";
+@import "clearfix";
+@import "layout";
+
+// page
+@import "pages/index";
+@import "pages/cart";
+@import "pages/login";
+@import "pages/register";
+

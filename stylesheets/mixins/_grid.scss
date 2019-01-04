@@ -1,35 +1,35 @@
 // Desktop first
-@mixin pad{
+@mixin pad() {
 	@media (max-width: 768px){
 		@content
 	}
 }
 
-@mixin iphone568{
+@mixin iphone568() {
 	@media (max-width: 568px){
 		@content
 	}
 }
 
-@mixin mobile480{
+@mixin mobile480() {
 	@media (max-width: 480px){
 		@content
 	}
 }
 
-@mixin iphone414{
+@mixin iphone414() {
 	@media (max-width: 414px){
 		@content
 	}
 }
 
-@mixin iphone375{
+@mixin iphone375() {
 	@media (max-width: 375px){
 		@content
 	}
 }
 
-@mixin iphone320{
+@mixin iphone320() {
 	@media (max-width: 320px){
 		@content
 	}

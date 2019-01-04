@@ -1,20 +1,25 @@
 .cart-content{
-	padding: 50px 40px 0;
-	
+	padding: 50px 0 0 40px;
+	display: flex;
 	h3{
 		font-size: $font-m;
 	}
 }
 @include pad{
 	.cart-content{
-		padding: 50px 5px 0;
+    padding: 50px 40px 0;
+  
 	}
 }
-
+@include iphone568{
+  .cart-content{
+    display: block;
+    padding: 50px 10px 0;
+  }
+}
 // 左側選單
 .asidemenu{
-	float: left;
-	width: 220px;
+	min-width: 220px;
 	.fa-leaf{
 		margin-right: 15px;
 	}
@@ -37,37 +42,46 @@
 		color: white;
 	}
 }
-@include iphone568{	//max-width: 568px
+
+@include iphone568{	
 	.asidemenu{
-		float: none;
 		width: 98%;
 	}
 }
 
 // 右側產品列表	
 .product{
-	margin-left: 240px;
-}
-@include iphone568{
-	.product{
-	 margin: 25px 0 0;
-    }
+  margin-left: 20px;
 }
 
+@include iphone568{
+  .product{
+    margin: 25px 0 0 0;
+  }
+}
+.cart-group{
+  display: flex;
+}
+@include pad{
+  .cart-group{
+    display: block;
+  }
+}
 // 將搜尋圖示放在input內						
-.search {
-	font-size: 32px;
-	width: 65%;
-  	position:relative;
-  	display:inline-block;
-  	i { 
-  		position: absolute; 
-  		right: 0;
-  		top: .24em;
-  		// top: calc(50% - 0.3em);
-  		background: $fontColor;
-  		color: white;
-  	}
+.search-bar{
+  margin-right: 110px;
+  font-size: 32px;
+	width: 63%;
+  position:relative;
+  display:inline-block;
+  i { 
+    position: absolute; 
+    right: 0;
+    top: .24em;
+    // top: calc(50% - 0.3em);
+    background: $fontColor;
+    color: white;
+  }
 	input{
 		width: 100%;
 		padding: 8px;
@@ -75,19 +89,19 @@
 		border: 2px solid $fontColor;
 	}
 }
-@include iphone320{
-	.search{
+
+@include pad{
+	.search-bar{
+    margin: 0;
 		width: 98%;
 	}
 }
 
 // 右上方購物車圖示
-.cart{
-	float: right;
-	margin: .5em;
-	li{
-		float: left;
-	}
+.cart-icon{
+  display: flex;
+  justify-content: flex-end;
+	margin: 8px;
 	li:nth-child(1){
 		margin-top: .5em;
 		margin-right: 1em;
@@ -103,22 +117,16 @@
 		text-decoration: none;
 	}
 }
-@include iphone320{
-	.cart{
-		float: none;
-		margin: 1em .5em 0;
-	}
-}
-	
 // 產品列表	
 .product-list{
+  display: flex;
+  flex-wrap: wrap;
 	margin-top: 25px;
 	text-align: center;
 	li{
-		float: left;
 		position: relative;
-		width: 32.333%;
-		margin: 0 1% 5% 0;
+		width: 30.333%;
+		margin: 0 20px 30px 0;
 		height: 280px;
 		box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
 		// 愛心圖示
@@ -129,25 +137,17 @@
 			color: white;
 		}
 	}
-	// // 第2 ,5 li區塊
-	// li:nth-child(3n+2){
-	// 	margin: 0 20px;
-	// }
-	// // 第4，5，6 li區塊
-	// li:nth-child(n+4){
-	// 	margin-top: 30px;
-	// }
 	h3{
 		font-weight: bold;
 		line-height: 1.5;
 		margin-top: .5em;
 	}
 	// 產品英文名稱
-	p:nth-of-type(3n+1){
+	p:nth-of-type(2n+1){
 		font-size: 14px;
 	}
 	// 產品價格
-	p:nth-of-type(3n+2){
+	p:nth-of-type(2n+2){
 		font-size: 20px;
 		font-weight: bold;
 		width: 90px;
@@ -174,59 +174,41 @@
 		color: white;
 	};	
 }
-//二欄式排列
-@include pad{	
-	.product-list{
-		li{
-			width: 48%;
-		}
-		// // 第2，5 li區塊
-		// li:nth-child(3n+2){
-		// 	margin: 0;
-		// }
-		// // 第4，5，6 li區塊
-		// li:nth-child(n+4){
-		// 	margin: 0;
-		// }
-		// li:nth-child(1){
-		// 	margin-right: 1em;
-		// }
-		// li:nth-child(3){
-		// 	margin: 1.5em 1em 1.5em 0;
-		// }
-		// li:nth-child(4){
-		// 	margin: 1.5em 0;
-		// }
-		// li:nth-child(5){
-		// 	margin-right: 1em;
-		// }
-	}
-}
+
 //單欄式排列
-@include iphone414{		
+@include pad{		
 	.product-list{
+    display: block;
+    padding-left: 80px;
 		li{
-			float: none;
-			width: 77%;
-			margin: 0 11% 10% 11%;
+      width: 90%;
+      margin: 0 0 30px 0;
 		}
 		h3{
 			margin: 0;
 		}
-		p:nth-of-type(3n+2){
+	}
+}	
+@include iphone414{
+  .product-list{
+    padding-left: 60px;
+    li{
+      width: 80%;
+		}
+    p:nth-of-type(2n+2){
 			margin: .5em auto .8em;
 			padding-top: 15px;
 		}
-	}
-}	
+  }
+}
 @include iphone320{
-	.product-list{
-		li{
-			width: 98%;
-			margin: 0 1% 10% 1%;
-		}
-	}
-}	
+  .product-list{
+    padding: 0px;
+    li{
+      width: 98%;
+    }
+  }
+}
 .ribbon {
   width: 120px;
   height: 120px;

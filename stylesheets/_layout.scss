@@ -17,6 +17,7 @@
 	height: 420px;
 	position: relative;
 }
+
 //mobile 背景圖
 @include iphone414{	//max-width: 414px
 	.header{
@@ -52,7 +53,6 @@
 		}
 	}
 }
-
 //desktop選單	
 .topmenu{
 	float: right;
@@ -62,10 +62,10 @@
 	a{
 		display: block;
 		color: white;
-	    text-align: center;
-	    text-decoration: none;
-	    padding: .5em 1em;
-	    transition: all .5s;
+    text-align: center;
+    text-decoration: none;
+    padding: .5em 1em;
+    transition: all .5s;
 	}
 	a:hover{
 		background: white;
@@ -82,24 +82,32 @@
 	max-height: 200px;
 }
 //mobile 漢堡選單
-@include iphone414{		  //max-width: 414px
+@include iphone414{
+	// // 固定選單	
+	// .fix-top{
+	// 	position: fixed;
+	// 	top: 0;
+	// 	right: 0;
+	// 	left: 0;
+	// 	z-index: 200;
+	// }	  
 	.topmenu{	
-		max-height: 0px;  //隱藏desktop選單
+		max-height: 0px;	//隱藏desktop選單
 		overflow: hidden;
 		transition: max-height 1.5s; 
-    	position: absolute;
-    	z-index: 100;
-    	top: 55px;
-    	left: 0;
-    	right: 0;
-    	background: rgba(0,0,0,0.75);
-    	li{
-    		float: none;
-    		border-bottom: 1px dashed #FFFFFF;
-    	}
-    	a{
-    		padding: 1em;
-    	}
+  	position: absolute;
+  	z-index: 100;
+  	top: 54px;
+  	left: 0;
+  	right: 0;
+  	background: rgba(0,0,0,0.75);
+  	li{
+  		float: none;
+  		border-bottom: 1px dashed #FFFFFF;
+  	}
+  	a{
+  		padding: 1em;
+  	}
  	}
 //顯示漢堡選單	
 	.showmenu{				

@@ -1,139 +1,150 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
-	<meta charset="UTF-8">
-	<title>會員登入</title>
-	
-	<link rel="shortcut icon" href="images/favicon.ico">
-    <meta name='description' content="六角西餐廳"/>
- 
-    <meta property="og:title" content="六角西餐廳"/>
-    <meta property="og:description" content="六角大漢堡">
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="FB上的網址"/>
-    <meta property="og:image" content="FB的圖片"/>
- 
-    <link href="圖片路徑" rel="apple-touch-icon"/>
- 
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/all.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>會員登入</title>
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/all.js"></script>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name='description' content="六角西餐廳" />
+
+  <meta property="og:title" content="六角西餐廳" />
+  <meta property="og:description" content="六角大漢堡">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="FB上的網址" />
+  <meta property="og:image" content="FB的圖片" />
+
+  <link href="圖片路徑" rel="apple-touch-icon" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/all.js"></script>
 </head>
+
 <body>
-	<div class="wrap">
-		<div class="header">
-			<div class="navbar clearfix">
-				<h1>
-					<a class="logo" href="#">六角西餐廳</a>
-				</h1>
-				<!-- desktop選單 -->
-				<ul class="topmenu">
-					<li>
-						<a href="index.html">六角餐廳</a>
-					</li>
-					<li>
-						<a href="cart.html">餐點訂購</a>
-					</li>
-					<li>
-						<a href="login.html">會員登入</a>
-					</li>
-				</ul>
-				<!-- 手機漢堡選單 -->
-				<a href="#" class="showmenu">
-				 	<i class="fas fa-bars fa-lg"></i>
-				</a> 
-			</div>
-			<!-- 標語 -->
-			<div class="poster">
-				<h2>咬一口就無法忘懷的漢堡</h2>
+  <div class="wrap">
+    <div class="header">
+      <div class="navbar clearfix">
+        <h1>
+          <a class="logo" href="#">六角西餐廳</a>
+        </h1>
+        <!-- desktop選單 -->
+        <ul class="topmenu">
+          <li>
+            <a href="index.html">六角餐廳</a>
+          </li>
+          <li>
+            <a href="cart.html">餐點訂購</a>
+          </li>
+          <li>
+            <a href="login.html">會員登入</a>
+          </li>
+        </ul>
+        <!-- 手機漢堡選單 -->
+        <a href="#" class="showmenu">
+          <i class="fas fa-bars fa-lg"></i>
+        </a>
+      </div>
+      <!-- 標語 -->
+      <div class="poster">
+        <h2>咬一口就無法忘懷的漢堡</h2>
 
-				<!-- 手機畫面標語 -->
-				<h2>咬一口<br>就無法忘懷的漢堡</h2>	
-				<br>
-				<p>七夕無法錯過的好滋味<br>
-					<i class="fas fa-utensils"></i>
-					 六角大漢堡
-					<i class="fas fa-utensils"></i>
-				</p>
-			</div>
-		</div>
+        <!-- 手機畫面標語 -->
+        <h2>咬一口<br>就無法忘懷的漢堡</h2>
+        <br>
+        <p>七夕無法錯過的好滋味<br>
+          <i class="fas fa-utensils"></i>
+          六角大漢堡
+          <i class="fas fa-utensils"></i>
+        </p>
+      </div>
+    </div>
 
-		<div class="login-content">
-		    <img src="images/logo_l.svg" alt="">
-		    <h3>享受美食好味道</h3>
+    <div class="login-content">
+      <img src="images/logo_l.svg" alt="">
+      <h3>享受美食好味道</h3>
 
-		    <div class="login-form">
-		    	<h3>LOGIN</h3>
-			    <form action="">
-			    	<label class="user" for="mail">
-		            	<p>
-		            		E-mail<span>*</span>
-		            	</p>
-						<i class="far fa-envelope fa-lg"></i>
-						<input id="mail" type="email" placeholder="請輸入E-mail">
-		            </label>
- 		            <label class="user" for="password">
-			            <p>
-			            	Password<span>*</span>
-			            </p>
-			            <i class="fas fa-lock fa-lg"></i>
-			            <input id="password" type="password" placeholder="請輸入密碼">
-		        	</label>
-		        	            
-		            <a class="forget" href="">
-		            	<p>忘記密碼?</p>
-		            </a>
-		            
-		            <div class="login-btn">
-		            	<a class="btn btn-gray" href="register.html">註冊</a>
-		            	<a class="btn btn-orange" href="">登入</a>
-		           	</div>
-		        </form>
-		    </div>
-    	</div>
+      <div class="login-form">
+        <h3>LOGIN</h3>
+        <form action="">
+          <label class="user" for="mail">
+            <p>
+              E-mail<span>*</span>
+            </p>
+            <i class="far fa-envelope fa-lg"></i>
+            <input id="mail" type="email" placeholder="請輸入E-mail">
+          </label>
+          <label class="user" for="password">
+            <p>
+              Password<span>*</span>
+            </p>
+            <i class="fas fa-lock fa-lg"></i>
+            <input id="password" type="password" placeholder="請輸入密碼">
+          </label>
 
-		<div class="footer">
-			<div class="about">
-				<h2>關於六角西餐廳</h2><br>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eveniet a, officiis adipisci similique sint aut est voluptatibus non aperiam.
-				</p>
-			</div>
-			<div class="contact">
-				<h2>聯絡方式</h2><br>
-				<ul>
-					<li><p>高雄市成功路</p></li>
-					<li><p>+886 886 886</p></li>
-					<li><p>service@hexschool.com</p></li>
-				</ul>
-			</div>
-			<!-- 社群圖示 -->
-			<div class="soclink clearfix">
-				<img src="images/logo_l.svg" class="logo-f" alt="">
-				<ul class="clearfix">
-					<li>
-						<a href="" class="line">
-							<img src="images/icon_line.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="" class="fb">
-							<img src="images/icon_fb.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="" class="twitter">
-							<img src="images/icon_twitter.png" alt="">
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+          <a class="forget" href="">
+            <p>忘記密碼?</p>
+          </a>
+
+          <div class="login-btn">
+            <a class="btn btn-gray" href="register.html">註冊</a>
+            <a class="btn btn-orange" href="">登入</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="about">
+        <h2>關於六角西餐廳</h2><br>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eveniet a, officiis adipisci similique sint
+          aut est voluptatibus non aperiam.
+        </p>
+      </div>
+      <div class="contact">
+        <h2>聯絡方式</h2><br>
+        <ul>
+          <li>
+            <p>高雄市成功路</p>
+          </li>
+          <li>
+            <p>+886 886 886</p>
+          </li>
+          <li>
+            <p>service@hexschool.com</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 社群圖示 -->
+      <div class="soclink clearfix">
+        <img src="images/logo_l.svg" class="logo-f" alt="">
+        <ul class="clearfix">
+          <li>
+            <a href="" class="line">
+              <img src="images/icon_line.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="" class="fb">
+              <img src="images/icon_fb.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="" class="twitter">
+              <img src="images/icon_twitter.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
